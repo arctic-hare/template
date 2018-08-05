@@ -1,0 +1,91 @@
+/*
+	Файл base.scss
+	- Содержит дефолтные стили для элементов.
+*/
+/* -----------------------------------*/
+/* ---------->>>  BASE  <<<-----------*/
+/* -----------------------------------*/
+html,
+html:root {
+    //font-size: 14px;
+}
+
+body {
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    //font-weight: 500;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: textfield;
+}
+
+a, img, input, button, textarea {
+    &:focus {
+        //outline: none;
+    }
+    transition: color .3s;
+}
+
+a:visited {
+    //text-decoration: none !important;
+}
+
+a:focus {
+    //text-decoration: none;
+}
+
+h1, .h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+        font-size: 2.25rem;
+        line-height: 2.875rem;
+        margin-bottom: 2rem;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $h1-font-size;
+        line-height: 3.125rem;
+        margin-bottom: 3.75rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+        line-height: 2.625rem;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $h2-font-size;
+        line-height: 2.625rem;
+        margin-bottom: 3.75rem;
+    }
+}
+
+h3, .h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625;
+    color: $secondary;
+}

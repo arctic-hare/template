@@ -1,0 +1,68 @@
+$rub: 'icomoon';
+
+/*
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xs: 308px,
+  md: 704px,
+  xl: 1160px
+) !default;
+
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer * .75),
+  4: $spacer,
+  5: ($spacer * 1.25),
+  6: ($spacer * 2),
+  7: ($spacer * 2.5),
+  8: ($spacer * 4),
+  9: ($spacer * 7),
+  10: ($spacer * 10)
+), $spacers);
+*/
+
+//colors
+
+//Переменные цветов заданы в _assets/_scss/bootstrap/_variables.scss
+//$gray-200: #e5e5e5 !default;
+//$gray-400: #cccccc !default;
+//$gray-600: #606060 !default;
+//$gray-900: #2a2a2a !default;
+
+$text: $gray-900;
+$border: $gray-400;
+$white05: rgba(255, 255, 255, 0.5);
+$decoration-color: rgba(42, 42, 42, 0.4);

@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+AddDefaultCharset utf-8
+
+AddHandler my-action .html
+Action my-action /template/include/action.php
+
+

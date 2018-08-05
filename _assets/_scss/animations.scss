@@ -1,0 +1,18 @@
+@keyframes myFadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+//Стиль для события animationend на нужном элементе
+
+@keyframes js-event {
+    0% {
+        opacity: .99;
+    }
+    100% {
+        opacity: 1;
+    }
+}

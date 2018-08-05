@@ -1,0 +1,209 @@
+.rub {
+    font-family: $rub !important;
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 66%;
+    transform: translateY(-1%);
+    &:before {
+        content: "\e900";
+        padding-bottom: 3px;
+    }
+}
+
+.i-arrow-right {
+    background-image: svg-load('../img/svg/ic_arrow_right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-arrow-left {
+    background-image: svg-load('../img/svg/ic_arrow_right.svg', fill='#ffffff');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 11px;
+    transform: rotate(-180deg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-arrow-small {
+    background-image: svg-load('../img/svg/ic_arrow-small.svg', stroke=$gray-900);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ico-plus {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    &:after,
+    &:before {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        display: block;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: $gray-900;
+    }
+    &:before {
+        transform: rotate(90deg);
+    }
+}
+
+.ico-minus {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    &:before {
+        position: absolute;
+        top: 7px;
+        display: block;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: $gray-900;
+    }
+}
+
+.i-cart {
+    width: 28px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: svg-load('../img/svg/ic_cart.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.i-menu {
+    width: 26px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: svg-load('../img/svg/ic_menu.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.i-svk {
+    width: 12px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: svg-load('../img/svg/ic_svk.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media-breakpoint-up(md) {
+        width: 16px;
+        height: 13px;
+    }
+}
+
+.i-ruler {
+    background-image: svg-load('../img/svg/ic_ruler.svg', fill=$gray-600);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 9px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-sheet {
+    background-image: svg-load('../img/svg/ic_sheet.svg', fill=$gray-600);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-more-info {
+    background-image: svg-load('../img/svg/ic_more_info.svg', fill=$light);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-close {
+    background-image: svg-load('../img/svg/ic_close.svg', fill=$light);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-close-small {
+    background-image: svg-load('../img/svg/ic_close_small.svg', fill=$secondary);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.i-close-big {
+    background-image: svg-load('../img/svg/ic_close_big.svg', fill=$white);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-return {
+    background-image: svg-load('../img/svg/ic_return.svg', fill=$red);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-place-store {
+    display: inline-block;
+    vertical-align: middle;
+    height: 31px;
+    width: 38px;
+    background: svg-load('../img/svg/ic_place.svg') no-repeat;
+    background-size: contain;
+}
+
+.i-delivery {
+    display: inline-block;
+    vertical-align: middle;
+    height: 22px;
+    width: 41px;
+    background: svg-load('../img/svg/ic_delivery.svg') no-repeat;
+    background-size: contain;
+}
+
+.i-hand {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 25px;
+    background: svg-load('../img/svg/ic_hand.svg') no-repeat;
+    background-size: contain;
+}

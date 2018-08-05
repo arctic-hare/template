@@ -1,0 +1,27 @@
+/*
+	Файл styles.scss
+	Содержит только подключаемые файлы, тут не нет описания стилей.
+*/
+/* -----------------------------------*/
+/* ---------->>> STYLES <<<-----------*/
+/* -----------------------------------*/
+
+
+@import "fonts";
+@import "servises";
+@import "animations";
+@import "bootstrap/bootstrap";
+@import "../node_modules/magnific-popup/src/css/main";
+@import "plugins/c-spinner";
+@import "plugins/lightslider";
+@import "variables";
+@import "base";
+@import "icons";
+@import "forms";
+@import "elements";
+@import "layout";
+@import "layers";
+@import "widget";
+@import "bem/bem-compile";
+@import "helpers";
+
